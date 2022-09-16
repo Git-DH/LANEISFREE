@@ -1,0 +1,83 @@
+/* css 리셋 */
+@import 'reset.css';
+
+:root {
+  /* ====== Background Colors ====== */
+  --bg-main: #79a3dc;
+  --bg-point: #4477be;
+  --bg-white: #fdfdfd;
+  --bg-light-gray: #aaaaaa;
+  --bg-gray: #5f5f5f;
+  --bg-dark-gray: #2b2b2b;
+  --bg-black: #000;
+  --bg-gradient: linear-gradient(to left bottom, #f3bac7, #ebb4ce, #deafd7, #cbade0, #b2ace7, #9fb4f1, #88bcf7, #6ec3f9, #5fd2fd, #5be1fd, #64eff9, #7afbf1);
+
+  /* ====== Text Colors ====== */
+  --text-main: #79a3dc;
+  --text-point: #4477be;
+  --text-white: #fdfdfd;
+  --text-light-gray: #aaaaaa;
+  --text-gray: #5f5f5f;
+  --text-dark-gray: #2b2b2b;
+  --text-black: #000;
+  --text-brown: #a2640c;
+  --text-marine: #487371;
+  --text-purple: #5e55d7;
+
+  /* ====== Transition ====== */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+
+  /* ====== Size ====== */
+  --mobile-min-width: 20rem;
+  --mobile-max-width: 28.75rem;
+  --mobile-height: 52.75rem;
+  --box-width: 20.375rem; /* 325px */
+  --font-lg: 1.125rem; /* 18px */
+  --font-md: 1rem; /* 16px */
+  --font-sm: 0.875rem; /* 14px */
+  /* ====== Shadow ====== */
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@font-face {
+  font-family: 'Arita-dotum-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Arita-dotum-Medium';
+  background-color: var(--bg-white);
+}
+::selection {
+  color: var(--text-white);
+  background-color: var(--text-main);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
